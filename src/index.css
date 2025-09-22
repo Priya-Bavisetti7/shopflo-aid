@@ -2,9 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* WayIn Design System - All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
+
+:root {
+  /* WayIn Brand Colors */
+  --wayin-primary: 220 100% 50%;
+  --wayin-primary-light: 220 100% 60%;
+  --wayin-secondary: 45 100% 55%;
+  --wayin-accent: 165 100% 40%;
+  --wayin-success: 142 76% 36%;
+  --wayin-warning: 38 92% 50%;
+  --wayin-error: 0 84% 60%;
+  
+  /* WayIn Gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--wayin-primary)), hsl(var(--wayin-primary-light)));
+  --gradient-hero: linear-gradient(135deg, hsl(var(--wayin-primary)) 0%, hsl(var(--wayin-accent)) 100%);
+  
+  /* WayIn Shadows */
+  --shadow-soft: 0 4px 20px hsla(var(--wayin-primary), 0.15);
+  --shadow-medium: 0 8px 30px hsla(var(--wayin-primary), 0.25);
+}
 
 @layer base {
   :root {
